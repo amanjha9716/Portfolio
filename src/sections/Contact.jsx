@@ -21,7 +21,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true); // Show loading state
-    console.log(import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY);
+    // console.log(import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY);
     try {
       await emailjs.sendForm(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
